@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MokePon! No quiero que me demanden!</title>
+    <script src="./javascript/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section id="seleccionar-pet">
+      <h1 id="titulo" class="titulo">¡Mokepon!🔥💧🌱</h1>
+
+      <h2 class="subtitulo">Elige tu mascota:</h2>
+
+      <div class="tarjetitas">
+        <input type="radio" name="mascota" id="hipodoge">
+        <label class="mokepon-tarjeta" for="hipodoge">
+          <p>Hipodoge</p>
+          <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Hipodoge">
+        </label>
+        <input type="radio" name="mascota" id="capipepo">
+        <label class="mokepon-tarjeta" for="capipepo">
+          <p>Capipepo</p>
+          <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Capipepo">
+        </label>
+        <input type="radio" name="mascota" id="ratigueya">
+        <label class="mokepon-tarjeta" for="ratigueya">
+          <p>Ratigueya</p>
+          <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+        </label>
+      </div>
+
+      <button id="btn-pet">Seleccionar</button>
+
+    </section>
+
+    <section id="seleccionar-ataque">
+      <h1 id="titulo" class="titulo">¡Mokepon!🔥💧🌱</h1>
+      <h2 class="subtitulo">Elige tu ataque:</h2>
+
+      <div class="tarjetas-ataque">
+        <button id="btn-fire" class="btn-ataque">Fuego🔥</button>
+        <button id="btn-water" class="btn-ataque">Agua💧</button>
+        <button id="btn-earth" class="btn-ataque">Tierra🌱</button>
+      </div>
+
+      <div id="mensajes">
+          <p id="resultado">Esperando el combate</p>
+
+          <section id="reiniciar">
+            <button id="btn-reload">Reiniciar</button>
+          </section>
+      </div>
+
+      <div class="ataques">
+        <div class="">
+          <p id="vidas-player">3</p>
+          <p id="pet-player">null</p>
+          <div id="ataques-player"></div>
+        </div>
+        <div class="">
+          <p id="vidas-ia">3</p>
+          <p id="pet-ia">null</p>
+          <div id="ataques-ia"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
